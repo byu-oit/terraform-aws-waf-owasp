@@ -69,3 +69,8 @@ variable "rule_blacklisted_ips_action_type" {
   default     = "COUNT"
   description = "Rule action type. Either BLOCK, ALLOW, or COUNT (useful for testing)"
 }
+
+variable "log_destination_arn" {
+  default = ""
+  description = "The arn for the firehose stream for logging for the waf"
+}
