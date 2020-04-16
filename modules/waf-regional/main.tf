@@ -137,16 +137,16 @@ resource "aws_wafregional_web_acl" "wafregional_acl" {
    logging_configuration {
     log_destination = var.log_destination_arn
 
-    redacted_fields {
-      field_to_match {
-        type = "URI"
-      }
+    #redacted_fields {
+      #field_to_match {
+        #type = "URI"
+      #}
 
-      field_to_match {
-        data = "referer"
-        type = "HEADER"
-      }
-    }
+      #field_to_match {
+        #data = "referer"
+        #type = "HEADER"
+      #}
+    #}
   }
 }
 
